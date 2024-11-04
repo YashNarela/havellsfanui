@@ -1,0 +1,41 @@
+@import "flex";
+
+.header {
+  @include flex();
+  .headerimage {
+    img {
+      width: 117px;
+    }
+  }
+
+  .search-option {
+    @include flex();
+    gap: 2rem;
+
+    padding: 0px 9rem;
+    border-radius: 40px;
+
+    border-radius: 10px;
+
+    border: 2px solid black;
+  }
+
+  .search-by-category {
+    @include flex();
+    gap: 1.2rem;
+  }
+
+  .bussiness {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 0px 2rem;
+    color: red;
+    font-weight: 700;
+  }
+
+  .icons i {
+    font-size: 2rem;
+    display: inline-flex;
+    margin: 0px 2rem;
+  }
+}
