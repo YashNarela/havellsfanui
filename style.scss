@@ -1,6 +1,7 @@
 @import "flex";
 
 @import "media";
+
 @import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
@@ -67,10 +68,6 @@
     }
   }
 
-  liclist.active {
-    display: block;
-  }
-
   .search-by-category.active {
     display: block;
   }
@@ -112,6 +109,23 @@
   }
 }
 
+.list {
+  list-style: none;
+
+  position: relative;
+
+  display: none;
+
+  transition: all 2s ease-in-out;
+  li {
+    margin-top: 1rem;
+  }
+}
+
+.list.active {
+  display: block;
+}
+
 .blwheader {
   width: 50%;
   margin-bottom: 1rem;
@@ -131,17 +145,31 @@
       }
     }
   }
-  .blwlist.active {
-    display: block;
-  }
 }
 
 .mainimage {
+  position: relative;
   width: 100%;
   img {
     width: 100%;
     object-fit: cover;
   }
+
+  .headerimgline {
+    background: transparent;
+    position: absolute;
+    @include flex();
+    left: 40%;
+    bottom: 15px;
+    .line {
+      width: 15px;
+      height: 4px;
+      background-color: red;
+
+      margin-left: 1rem;
+    }
+  }
 }
 
 @include media();
+@include mediaSSE();
