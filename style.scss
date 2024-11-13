@@ -171,5 +171,250 @@
   }
 }
 
+.homeshop {
+  margin-bottom: 1.4rem;
+  @include flex();
+  justify-content: start;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.fansimg {
+  @include flex();
+  .fansimgbox {
+    display: flex;
+    justify-content: center;
+
+    gap: 8rem;
+    flex-wrap: wrap;
+  }
+}
+
+.filters {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  @include flex();
+  justify-content: space-between;
+  margin-top: 1rem;
+  .filterpart {
+    @include flex();
+    justify-content: start;
+    align-items: center;
+
+    i {
+      margin-left: 0.45rem;
+    }
+
+    span {
+      margin-left: 0.45rem;
+    }
+  }
+
+  .recmoded {
+    margin-right: 1rem;
+  }
+}
+
+.haveles {
+  padding-left: 2rem;
+  h3 {
+  }
+}
+
+.fansgrid {
+  .gridimgbody {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    .gridimg {
+      img {
+        width: 329px;
+      }
+
+      .gridimflex {
+        @include flex();
+        flex-direction: column;
+
+        .circlewrap {
+          @include flex();
+          gap: 0.65rem;
+          .circlecolor {
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+
+            .insidecircle {
+              height: 22px;
+              position: absolute;
+              width: 22px;
+              border-radius: 50%;
+              background-color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  margin: 1rem 0px;
+  .contentwrite {
+    @include flex();
+    justify-content: flex-start;
+    white-space: nowrap;
+    gap: 1rem;
+    .contentline {
+      width: 13px;
+      height: 2px;
+
+      background-color: black;
+    }
+  }
+}
+
+.footer {
+  .footerbody {
+    .footergrid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      .footergridcol1 {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        .gridcol1list {
+          li {
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      // col2
+
+      .gridcol2 {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding-left: 1rem;
+        .gridcol2list {
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      // col3
+
+      .gridcol3 {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding-left: 1rem;
+        .gridcol3list {
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+
+        ul {
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      // grid4
+
+      .gridcol4 {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding-left: 1rem;
+        ul {
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      // grid5
+
+      .gridcol5 {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding-left: 1rem;
+        ul {
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      // grid6
+
+      .gridcol6 {
+        padding-left: 1rem;
+        ul {
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      // .grid7
+
+      .gridcol7 {
+        ul {
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      // col7 end
+    }
+  }
+}
+
+.footer2 {
+  border-bottom: 1px solid black rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  .footer2flex {
+    @include flex();
+
+    .footer2img {
+    }
+  }
+}
+
+.footer3 {
+  .footer3flex {
+    @include flex();
+  }
+}
 @include media();
 @include mediaSSE();
