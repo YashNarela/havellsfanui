@@ -111,4 +111,18 @@
       }
     }
   }
+
+  @media screen and (max-width: 460px) {
+    .fansgrid {
+      .gridimgbody {
+        .gridimg {
+          .gridimflex {
+            p {
+              padding-top: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
